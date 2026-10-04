@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta App - Môi trường thử nghiệm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f8fafc;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .badge {
+            display: inline-block;
+            background: #6366f1;
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+        p {
+            color: #94a3b8;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        .info-box {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 16px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .label {
+            color: #94a3b8;
+        }
+        .value {
+            font-weight: 600;
+            color: #38bdf8;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">Port 8080</span>
+        <h1>🚀 Beta App</h1>
+        <p>Môi trường kiểm thử ứng dụng độc lập (Beta Environment) được phân chia cổng trên máy chủ Nginx.</p>
+        
+        <div class="info-box">
+            <div class="info-row">
+                <span class="label">Dịch vụ:</span>
+                <span class="value">Beta Testing Application</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Cổng lắng nghe:</span>
+                <span class="value">8080 (TCP)</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Thư mục gốc (Root):</span>
+                <span class="value">/var/www/beta-app/html/</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Trạng thái:</span>
+                <span class="value" style="color: #4ade80;">Active / Running</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
